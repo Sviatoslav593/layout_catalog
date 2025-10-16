@@ -1,0 +1,21 @@
+.container {
+  --grid-step: 1;
+
+  display: grid;
+  grid-template-columns: repeat(var(--grid-step), $card-width);
+  gap: 46px 48px;
+  padding: 50px 40px;
+  justify-content: center;
+
+  @media (min-width: 488px) {
+    --grid-step: 2;
+  }
+
+  @media (min-width: 768px) {
+    --grid-step: 3;
+  }
+
+  @media (min-width: 1024px) {
+    --grid-step: 4;
+  }
+}

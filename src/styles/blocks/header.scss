@@ -44,28 +44,22 @@
     &:hover {
       color: $blue;
     }
+
+    &.is-active {
+      position: relative;
+      color: $blue;
+    }
+
+    &.is-active::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 4px;
+      width: 100%;
+      border-radius: 8px;
+      background: $blue;
+    }
   }
-}
-
-.link {
-  &-hover-link:hover {
-    color: $blue;
-  }
-}
-
-.is-active {
-  position: relative;
-  color: $blue;
-}
-
-.is-active::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  border-radius: 8px;
-  background: $blue;
 }

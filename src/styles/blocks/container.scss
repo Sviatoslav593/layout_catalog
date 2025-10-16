@@ -3,7 +3,7 @@
 
   display: grid;
   grid-template-columns: repeat(var(--grid-step), $card-width);
-  gap: $gap-horizontal $gap-vertical;
+  gap: $gap-vertical $gap-horizontal;
   padding: $catalog-padding-vertical $catalog-padding-horizontal;
   justify-content: center;
 
